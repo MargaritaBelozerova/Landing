@@ -30,8 +30,11 @@ strong, h1, h2, h3, h4, h5, h6 {
   outline: none;
   cursor: pointer;
   font-size: 18px;
+  text-decoration: none;
+  color: black;
 }
 .btn--primary {
+  color: aliceblue;
   background-color: orangered;
 }
 .btn--secondary {
@@ -205,4 +208,45 @@ color: aqua;
 .footer__email {
   max-width: 60%;
   width: 100%;
+}
+
+/*настройка страницы result */
+.result {
+  position: relative;
+  padding-top: 200px;
+  height: 100vh;
+  background: url('../img/bgi.jpg') no-repeat center /cover;
+}
+.result::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+.result__block {
+  position: relative;
+  z-index: 10;
+  flex-direction: column;
+  align-items: start;
+  color: aliceblue;
+}
+.result__search {
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  font-size: 16px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid aliceblue;
+  border-radius: 10px;
+}
+.group__result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
